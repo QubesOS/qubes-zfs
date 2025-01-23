@@ -1,0 +1,11 @@
+host:
+  rpm:
+    build:
+    - zfs.spec
+
+source:
+  files:
+  - url: https://github.com/openzfs/zfs/releases/download/zfs-@VERSION@/zfs-@VERSION@.tar.gz
+    signature: https://github.com/openzfs/zfs/releases/download/zfs-@VERSION@/zfs-@VERSION@.tar.gz.asc
+    pubkeys:
+    - zfs-key.asc
